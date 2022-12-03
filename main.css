@@ -126,7 +126,9 @@ body {
   background: white;
   display: block;
   margin: 0.6rem 0;
-  transition: transform 0.5s, opacity 0.2s;
+  position: relative;
+  top: 0;
+  transition: all 0.5s ease-in-out 0.01s;
 }
 
 @media (min-width: 40rem) {
@@ -268,13 +270,11 @@ body {
 }
 
 .left-cross-bar {
-  position: relative;
   top: 12px;
   transform: rotate(45deg);
 }
 
 .right-cross-bar {
-  position: relative;
   top: -12px;
   transform: rotate(-45deg);
 }
