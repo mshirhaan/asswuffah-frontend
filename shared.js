@@ -29,3 +29,16 @@ function changeCss() {
 }
 
 window.addEventListener('scroll', changeCss, false);
+
+const features = document.querySelectorAll('.feature');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+features.forEach((el) => observer.observe(el));
