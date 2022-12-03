@@ -258,6 +258,11 @@ body {
   font-size: 1.5rem;
 }
 
+.mobile-nav__item a:hover,
+.mobile-nav__item a:active {
+  border-bottom: 5px solid white;
+}
+
 .open {
   display: block;
 }
