@@ -1,0 +1,66 @@
+.heroImageContainer {
+  height: calc(100vh - 140px);
+  padding-left: 6%;
+
+  background: linear-gradient(to right, white 50%, transparent),
+    url("../../../public/images/daarusswuffah-entrance.png") 100% / cover
+      no-repeat,
+    gray;
+}
+
+.heroImageContainer h1 {
+  letter-spacing: 3px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 6vw;
+  word-wrap: break-word;
+  padding-top: 10%;
+  margin: 0;
+}
+
+.heroImageContainerText {
+  width: 50%;
+}
+
+.primary {
+  color: var(--primary-color);
+}
+
+.secondary {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 73rem) {
+  .heroImageContainer {
+    background: linear-gradient(to right, white 50vw, transparent),
+      url("../../../public/images/daarusswuffah-entrance.png") 100% / cover
+        no-repeat,
+      gray;
+  }
+}
+
+@media (max-width: 40rem) {
+  .heroImageContainer {
+    height: calc(100vh - 148px);
+    background: linear-gradient(to right, white 50vw, transparent),
+      url("../../../public/images/daarusswuffah-entrance.png") 100% / cover
+        no-repeat,
+      gray;
+  }
+
+  .heroImageContainerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    width: 100%;
+  }
+
+  .heroImageContainerText h1 {
+    padding-top: 50px;
+    font-size: 10vw;
+  }
+
+  .heroImageContainerText p {
+    display: none;
+  }
+}

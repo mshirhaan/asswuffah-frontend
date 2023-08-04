@@ -1,0 +1,13 @@
+.eventsAlbumContainer h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.eventsAlbumCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.eventsAlbumContainer {
+  padding: 60px 0;
+}

@@ -1,0 +1,65 @@
+.eventsContainer {
+  display: flex;
+  background-color: var(--primary-color);
+  padding: 60px 0;
+  color: white;
+}
+
+.imageContainer {
+  background-image: url("../../../public/images/events.jpeg");
+  background-size: cover;
+  width: 50vw;
+  height: 70vh;
+  margin-right: 40px;
+  flex-shrink: 0;
+  border-radius: 0 40px 40px 0;
+}
+
+.eventsContainer p {
+  width: 70%;
+}
+
+.btn {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  position: relative;
+  left: calc(50% - 142px / 2);
+}
+
+@media (max-width: 40rem) {
+  .imageContainer {
+    width: 90%;
+    height: 38vh;
+    margin: auto;
+  }
+
+  .eventsContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .eventsContainer p {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 40px;
+  }
+
+  .eventsContainer .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    position: static;
+    display: inline;
+    margin: 40px;
+  }
+}

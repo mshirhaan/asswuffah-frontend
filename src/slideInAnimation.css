@@ -1,0 +1,25 @@
+@keyframes slideInFromLeftKeyFrame {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slideInFromLeft {
+  animation: slideInFromLeftKeyFrame 1.5s ease;
+}
+
+@keyframes slideInFromRightKeyFrame {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slideInFromRight {
+  animation: slideInFromRightKeyFrame 1.5s ease;
+}

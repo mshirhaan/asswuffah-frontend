@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+.slick-list {
+  margin: 0 -7px;
+}
+.slick-list .slick-slide > div {
+  padding: 0 10px;
+}
+
+/* Customize the color of the dots */
+.slick-dots li button:before {
+  color: var(--secondary-color); /* Replace with your desired color */
+}
+
+/* Customize the color of the active dot */
+.slick-dots li.slick-active button:before {
+  color: white; /* Replace with your desired color */
+}
+
+:root {
+  --primary-color: #536b6d;
+  --secondary-color: #bbb17d;
+  /* Add more global color variables as needed */
+}

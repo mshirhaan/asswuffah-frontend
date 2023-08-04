@@ -1,0 +1,145 @@
+.footer {
+  background-color: var(--primary-color);
+  padding: 40px;
+  color: white;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.footerGrid > div {
+  margin: 20px;
+}
+.footerAddress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-break: keep-all;
+}
+
+.logo {
+  background-image: url("../../../public/images/footer-logo.png");
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  background-position: -13px;
+}
+
+.address {
+  margin: 10px 0;
+}
+
+.newsLetterSubscribe {
+  vertical-align: middle;
+}
+.newsLetterSubscribe .heading {
+  font-weight: normal;
+  text-align: center;
+}
+
+.newsLetterSubscribe input {
+  box-sizing: border-box;
+  height: 3.3rem;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  flex-grow: 2;
+}
+
+.newsLetterSubscribe input:focus {
+  outline: none;
+}
+
+.email:focus-within {
+  outline: 1px solid gray;
+}
+
+.btn {
+  height: 3.3rem;
+  width: 30%;
+  color: black;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--secondary-color);
+  font-family: inherit;
+}
+
+.list {
+  padding: 0;
+  text-align: center;
+}
+
+.navLink {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.navLink:hover {
+  color: var(--secondary-color);
+}
+
+.email {
+  display: flex;
+  border-radius: 30px;
+  padding: 1px;
+}
+
+.socialLinks p {
+  text-align: center;
+}
+
+.socialContact {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 63rem) {
+  .email {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn,
+  .newsLetterSubscribe input {
+    margin: 5px 0;
+    width: 100%;
+    height: 3.3rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerGrid {
+    display: block;
+  }
+
+  .list,
+  .socialLinks p {
+    text-align: center;
+  }
+
+  .socialContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .footerAddress {
+    text-align: center;
+  }
+
+  .logo {
+    background-position: 0;
+  }
+}
